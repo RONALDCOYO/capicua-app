@@ -1,0 +1,7 @@
+<p>capicua-checker works!</p>
+<div>
+    <input type="text" [(ngModel)]="inputNumber" (input)="checkCapicua()" placeholder="Ingrese un número">
+    <p *ngIf="isCapicua">El número {{ inputNumber }} es capicúa.</p>
+    <p *ngIf="!isCapicua">El número {{ inputNumber }} no es capicúa.</p>
+  </div>
+  
